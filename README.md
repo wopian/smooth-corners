@@ -40,9 +40,11 @@ Without a `--smooth-corners` variable set it will default to a value of `4`
 
 ```css
 .mask {
-  /* Integer 1 to 100. Scoped locally or globally in :root {}
-     2 is a perfect circle
-     < 2 are diamonds / asteroids
+  /* Integer 0 to 100. Scoped locally or globally in :root {}
+     < 1 are concave rhombuses / asteroids
+     = 1 is a perfect rhombus
+     > 1 and <2 are convex rhombuses>
+     = 2 is a perfect circle
      > 2 are rounded squares */
   --smooth-corners: 3;
   mask-image: paint(smooth-corners);

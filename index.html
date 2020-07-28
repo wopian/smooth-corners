@@ -4,7 +4,7 @@
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <meta http-equiv='X-UA-Compatible' content='ie=edge' />
-    <title>Smooth Corners</title>
+    <title>Static Template</title>
     <style>
       body {
         font-family: sans-serif;
@@ -51,7 +51,7 @@
       }
 
       .mask {
-        background: linear-gradient(#F34072, #d01257);
+        background: linear-gradient(#f34072, #d01257);
         mask-image: paint(smooth-corners);
         -webkit-mask-image: paint(smooth-corners);
       }
@@ -61,19 +61,27 @@
       }
 
       .circle {
-        --smooth-corners: 2.1;
+        --smooth-corners: 2;
       }
 
       .circleish {
-        --smooth-corners: 2.758;
+        --smooth-corners: 2.6;
       }
 
-      .diamond-in {
-        --smooth-corners: 0.9;
+      .rhombus {
+        --smooth-corners: 1;
       }
 
-      .diamond-out {
-        --smooth-corners: 1.1;
+      .rhombus-concave {
+        --smooth-corners: 0.8;
+      }
+
+      .rhombus-convex {
+        --smooth-corners: 1.2;
+      }
+
+      .asteroid {
+        --smooth-corners: 0.5;
       }
 
       .custom-6 {
@@ -100,6 +108,14 @@
         --smooth-corners: 16;
       }
 
+      .custom-32 {
+        --smooth-corners: 32;
+      }
+
+      .custom-64 {
+        --smooth-corners: 64;
+      }
+
       hr {
         margin: 0 0 1rem;
       }
@@ -111,13 +127,16 @@
   </head>
   <body>
     <!-- Gradient -->
+
     <section>
       <div class='box square mask'>5</div>
       <div class='box mask'>4</div>
-      <div class='box circleish mask'>2.758</div>
-      <div class='box circle mask'>2.1</div>
-      <div class='box diamond-out mask'>0.9</div>
-      <div class='box diamond-in mask'>1.1</div>
+      <div class='box circleish mask'>2.6</div>
+      <div class='box circle mask'>2</div>
+      <div class='box rhombus-convex mask'>1.2</div>
+      <div class='box rhombus mask'>1</div>
+      <div class='box rhombus-concave mask'>0.8</div>
+      <div class='box asteroid mask'>0.5</div>
     </section>
 
     <!-- Black -->
@@ -125,10 +144,12 @@
     <section>
       <div class='box square'>5</div>
       <div class='box'>4</div>
-      <div class='box circleish'>2.758</div>
-      <div class='box circle'>2.1</div>
-      <div class='box diamond-out'>0.9</div>
-      <div class='box diamond-in'>1.1</div>
+      <div class='box circleish'>2.6</div>
+      <div class='box circle'>2</div>
+      <div class='box rhombus-convex'>1.2</div>
+      <div class='box rhombus'>1</div>
+      <div class='box rhombus-concave'>0.8</div>
+      <div class='box asteroid'>0.5</div>
     </section>
 
     <!-- Avatar -->
@@ -152,11 +173,19 @@
       />
       <img
         src='https://media.kitsu.io/users/avatars/42603/large.png?1590004137'
-        class='avatar mask diamond-out'
+        class='avatar mask rhombus-convex'
       />
       <img
         src='https://media.kitsu.io/users/avatars/42603/large.png?1590004137'
-        class='avatar mask diamond-in'
+        class='avatar mask rhombus'
+      />
+      <img
+        src='https://media.kitsu.io/users/avatars/42603/large.png?1590004137'
+        class='avatar mask rhombus-concave'
+      />
+      <img
+        src='https://media.kitsu.io/users/avatars/42603/large.png?1590004137'
+        class='avatar mask asteroid'
       />
     </section>
 
@@ -181,11 +210,19 @@
       />
       <img
         src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
-        class='avatar mask diamond-out'
+        class='avatar mask rhombus-convex'
       />
       <img
         src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
-        class='avatar mask diamond-in'
+        class='avatar mask rhombus'
+      />
+      <img
+        src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
+        class='avatar mask rhombus-concave'
+      />
+      <img
+        src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
+        class='avatar mask asteroid'
       />
     </section>
 
@@ -210,11 +247,19 @@
       />
       <img
         src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
-        class='poster mask diamond-out'
+        class='poster mask rhombus-convex'
       />
       <img
         src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
-        class='poster mask diamond-in'
+        class='poster mask rhombus'
+      />
+      <img
+        src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
+        class='poster mask rhombus-concave'
+      />
+      <img
+        src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
+        class='poster mask asteroid'
       />
     </section>
 
@@ -225,7 +270,11 @@
       <p>12</p>
       <p>14</p>
       <p>16</p>
+      <p>32</p>
+      <p>64</p>
     </section>
+
+    <!-- Poster as Avatar Custom (Kakushigoto) -->
 
     <section>
       <img
@@ -252,7 +301,17 @@
         src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
         class='avatar mask custom-16'
       />
+      <img
+        src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
+        class='avatar mask custom-32'
+      />
+      <img
+        src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
+        class='avatar mask custom-64'
+      />
     </section>
+
+    <!-- Poster Custom (Kakushigoto) -->
 
     <section>
       <img
@@ -278,6 +337,14 @@
       <img
         src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
         class='poster mask custom-16'
+      />
+      <img
+        src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
+        class='poster mask custom-32'
+      />
+      <img
+        src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
+        class='poster mask custom-64'
       />
     </section>
 
