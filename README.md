@@ -1,6 +1,6 @@
 <h1 align=center>Smooth Corners</h1>
 
-<p align=center>Superellipse masks using the <a href='https://developer.mozilla.org/en-US/docs/Web/Houdini'>CSS Houndini</a> API</p>
+<p align=center>Superellipse masks using the <a href='https://developer.mozilla.org/en-US/docs/Web/Houdini'>CSS Houdini</a> API</p>
 
 ![](https://repository-images.githubusercontent.com/283091953/46814880-d08f-11ea-8933-05a3818dc9b7)
 
