@@ -18,6 +18,15 @@
 
 ![Static demo of Smooth Corners][CTA]
 
+## Demo
+
+[Live demo](https://wopian.github.io/smooth-corners/) featuring several different `--smooth-corners` values
+
+- `5`, iOS App Icon
+- `4`, Squircle (default)
+- `2.6`, KakaoTalk profile icon
+- `0.6`, [Astroid]
+
 ## Usage
 
 ### CSS
@@ -25,8 +34,6 @@
 Add `mask-image: paint(smooth-corners)` to the elements you want to mask
 
 #### Default (Squircle)
-
-Without a `--smooth-corners` variable set it will default to a value of `4`
 
 ```css
 .squircle {
@@ -38,10 +45,17 @@ Without a `--smooth-corners` variable set it will default to a value of `4`
 
 #### Customise Shape / Roundness
 
+You can customise the mask shape by using a CSS custom property. This can be scoped locally to the selector or defined globally in `:root {}`
+
+`--smooth-corners: nA[, nB]`
+
+- **nA** - Float,
+
+
 ```css
 .mask {
   /* Integer 0 to 100. Scoped locally or globally in :root {}
-     < 1 are concave rhombuses / asteroids
+     < 1 are concave rhombuses
      = 1 is a perfect rhombus
      > 1 and <2 are convex rhombuses>
      = 2 is a perfect circle
@@ -99,3 +113,4 @@ Like Web Workers, the [Paint Worklet] API requests the module path in the browse
 [Paint Worklet]:https://developer.mozilla.org/en-US/docs/Web/API/PaintWorklet
 [CTA]:https://raw.githubusercontent.com/wopian/smooth-corners/master/.github/images/cta.png
 [Example]:https://raw.githubusercontent.com/wopian/smooth-corners/master/.github/images/example.png
+[Astroid]:https://en.wikipedia.org/wiki/Astroid
