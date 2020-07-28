@@ -20,7 +20,7 @@
 
 ## Demo
 
-[Live demo](https://wopian.github.io/smooth-corners/) featuring several different `--smooth-corners` values
+[Live demo](https://wopian.github.io/smooth-corners/) featuring several different `--smooth-corners` values and an interactive editor
 
 - `5`, iOS App Icon
 - `4`, Squircle (default)

@@ -11,12 +11,20 @@
         margin: 1rem;
       }
 
-      section {
+      section:not(.liveEditor) {
         display: flex;
         gap: 1rem;
         flex-wrap: wrap;
-        margin-bottom: 1rem;
         justify-content: center;
+      }
+
+      section:not(.liveEditor),
+      hr {
+        margin: 0 auto 1rem;
+        --items-per-row: 5;
+        max-width: calc(
+          (10rem * var(--items-per-row)) + 1rem * (var(--items-per-row) - 1)
+        );
       }
 
       .box,
@@ -29,8 +37,6 @@
       .box {
         height: 10rem; /* 18.5 for cta */
         color: #fff;
-        background: #000;
-        background: paint(smooth-corners);
       }
 
       .avatar {
@@ -84,8 +90,8 @@
         --smooth-corners: 0.6;
       }
 
-      .special-3-1d8 {
-        --smooth-corners: 3, 1.8;
+      .special-16-2 {
+        --smooth-corners: 16, 2;
       }
 
       .special-0d6-2 {
@@ -124,47 +130,143 @@
         --smooth-corners: 64;
       }
 
-      hr {
-        margin: 0 0 1rem;
+      .custom-80 {
+        --smooth-corners: 80;
       }
-      p {
+
+      .custom-96 {
+        --smooth-corners: 96;
+      }
+
+      p,
+      pre {
         margin: 0;
         padding: 0;
+      }
+
+      #editable {
+        --smooth-corners: 4;
+      }
+
+      .liveEditor {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin: 0 auto 1rem;
+        justify-content: center;
+        --items-per-row: 5;
+        max-width: calc(
+          (10rem * var(--items-per-row)) + 1rem * (var(--items-per-row) - 1)
+        );
+      }
+      .liveEditor input {
+        --items-per-row: 3;
+        width: calc(
+          (10rem * var(--items-per-row)) + 1rem * (var(--items-per-row) - 1)
+        );
+      }
+
+      .liveEditor .sliders {
+        --items-per-row: 4;
+        width: calc(
+          (10rem * var(--items-per-row)) + 1rem * (var(--items-per-row) - 1)
+        );
+        max-width: calc(100vw - 12rem);
+      }
+
+      .liveEditor .value,
+      .liveEditor label {
+        min-width: 10rem;
+        width: 10rem;
+        flex-shrink: 0;
+      }
+
+      .liveEditor .sliders > div {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+      }
+
+      .liveEditor .sliders > .left {
+        display: block;
+      }
+
+      .liveEditor .sliders > .left input {
+        width: auto;
+      }
+
+      .liveEditor pre {
+        margin-top: 1rem;
       }
     </style>
   </head>
   <body>
+    <section class='liveEditor'>
+      <div id='editable' class='box mask'></div>
+      <div class='sliders'>
+        <div>
+          <input
+            id='rangeX'
+            type='range'
+            min='0'
+            max='1000'
+            step='0.1'
+            value='589.37'
+          />
+          <label for='rangeX' id='valueX' class='value'>X = 4.00</label>
+        </div>
+        <div>
+          <input
+            id='rangeY'
+            type='range'
+            min='0'
+            max='1000'
+            step='0.1'
+            value='589.37'
+            disabled
+          />
+          <label for='rangeY' id='valueY' class='value'>Y = 4.00</label>
+        </div>
+        <div class='left'>
+          <input id='assymetricalToggle' type='checkbox' />
+          <label for='assymetricalToggle'>Assymetrical superellipses</label>
+        </div>
+        <div>
+          <input
+            id='background'
+            type='text'
+            value='linear-gradient(#f34072, #d01257);'
+          />
+          <label for='background'>Background</label>
+        </div>
+        <div class='left'>
+          <pre>--smooth-corners: <span id='valueCSS'>4</span>
+mask-image: paint(smooth-corners);
+-webkit-mask-image: paint(smooth-corners);
+					</pre>
+        </div>
+      </div>
+    </section>
+    <hr />
     <!-- Gradient -->
-
     <section>
+      <div class='box special-16-2 mask'>16, 2</div>
       <div class='box square mask'>5</div>
       <div class='box mask'>4</div>
       <div class='box circleish mask'>2.6</div>
       <div class='box circle mask'>2</div>
-      <div class='box special-3-1d8 mask'>3, 1.8</div>
       <div class='box special-0d6-2 mask'>0.6, 2</div>
       <div class='box rhombus-convex mask'>1.2</div>
       <div class='box rhombus mask'>1</div>
       <div class='box rhombus-concave mask'>0.8</div>
       <div class='box astroid mask'>0.6</div>
     </section>
-
-    <!-- Black -->
-
-    <section>
-      <div class='box square'>5</div>
-      <div class='box'>4</div>
-      <div class='box circleish'>2.6</div>
-      <div class='box circle'>2</div>
-      <div class='box rhombus-convex'>1.2</div>
-      <div class='box rhombus'>1</div>
-      <div class='box rhombus-concave'>0.8</div>
-      <div class='box astroid'>0.6</div>
-    </section>
-
     <!-- Avatar -->
-
     <section>
+      <img
+        src='https://media.kitsu.io/users/avatars/42603/large.png?1590004137'
+        class='avatar mask special-16-2'
+      />
       <img
         src='https://media.kitsu.io/users/avatars/42603/large.png?1590004137'
         class='avatar mask square'
@@ -183,6 +285,10 @@
       />
       <img
         src='https://media.kitsu.io/users/avatars/42603/large.png?1590004137'
+        class='avatar mask special-0d6-2'
+      />
+      <img
+        src='https://media.kitsu.io/users/avatars/42603/large.png?1590004137'
         class='avatar mask rhombus-convex'
       />
       <img
@@ -198,10 +304,12 @@
         class='avatar mask astroid'
       />
     </section>
-
     <!-- Poster as Avatar (Kakushigoto) -->
-
     <section>
+      <img
+        src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
+        class='avatar mask special-16-2'
+      />
       <img
         src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
         class='avatar mask square'
@@ -220,6 +328,10 @@
       />
       <img
         src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
+        class='avatar mask special-0d6-2'
+      />
+      <img
+        src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
         class='avatar mask rhombus-convex'
       />
       <img
@@ -235,10 +347,12 @@
         class='avatar mask astroid'
       />
     </section>
-
     <!-- Poster (Kakushigoto) -->
-
     <section>
+      <img
+        src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
+        class='poster mask special-16-2'
+      />
       <img
         src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
         class='poster mask square'
@@ -257,6 +371,10 @@
       />
       <img
         src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
+        class='poster mask special-0d6-2'
+      />
+      <img
+        src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
         class='poster mask rhombus-convex'
       />
       <img
@@ -272,20 +390,20 @@
         class='poster mask astroid'
       />
     </section>
-
+    <hr />
     <section>
-      <p>6</p>
-      <p>8</p>
-      <p>10</p>
-      <p>12</p>
-      <p>14</p>
-      <p>16</p>
-      <p>32</p>
-      <p>64</p>
+      <div class='box mask custom-6'>6</div>
+      <div class='box mask custom-8'>8</div>
+      <div class='box mask custom-10'>10</div>
+      <div class='box mask custom-12'>12</div>
+      <div class='box mask custom-14'>14</div>
+      <div class='box mask custom-16'>16</div>
+      <div class='box mask custom-32'>32</div>
+      <div class='box mask custom-64'>64</div>
+      <div class='box mask custom-80'>80</div>
+      <div class='box mask custom-96'>96</div>
     </section>
-
     <!-- Poster as Avatar Custom (Kakushigoto) -->
-
     <section>
       <img
         src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
@@ -319,10 +437,16 @@
         src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
         class='avatar mask custom-64'
       />
+      <img
+        src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
+        class='avatar mask custom-80'
+      />
+      <img
+        src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
+        class='avatar mask custom-96'
+      />
     </section>
-
     <!-- Poster Custom (Kakushigoto) -->
-
     <section>
       <img
         src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
@@ -356,10 +480,81 @@
         src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
         class='poster mask custom-64'
       />
+      <img
+        src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
+        class='poster mask custom-80'
+      />
+      <img
+        src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
+        class='poster mask custom-96'
+      />
     </section>
-
     <script>
       if (CSS && 'paintWorklet' in CSS) CSS.paintWorklet.addModule('paint.js');
+    </script>
+    <script>
+      const minpos = 0;
+      const maxpos = 1000;
+      const minval = Math.log(0.6);
+      const maxval = Math.log(15);
+      const scale = (maxval - minval) / (maxpos - minpos);
+      const adjustedPosition = value =>
+        Number(minpos + (Math.log(value) - minval) / scale).toFixed(2);
+      const adjustedValue = position =>
+        Number(Math.exp((position - minpos) * scale + minval)).toFixed(2);
+
+      const editableBox = document.getElementById('editable');
+
+      const editableBoxBackground = document.getElementById('background');
+      editableBox.style.background = editableBoxBackground.value;
+
+      const assymetricalToggle = document.getElementById('assymetricalToggle');
+      let isAssymetric = false;
+
+      const rangeX = document.getElementById('rangeX');
+      const rangeY = document.getElementById('rangeY');
+
+      const valueX = document.getElementById('valueX');
+      const valueY = document.getElementById('valueY');
+      const valueCSS = document.getElementById('valueCSS');
+
+      const values = { X: 4, Y: 4 };
+
+      console.log(adjustedPosition(4));
+
+      assymetricalToggle.addEventListener('input', e => {
+        isAssymetric = e.target.checked;
+        if (!isAssymetric) rangeY.setAttribute('disabled', 'true');
+        else rangeY.removeAttribute('disabled');
+      });
+
+      editableBoxBackground.addEventListener('input', e => {
+        editableBox.style.background = e.target.value;
+      });
+
+      rangeX.addEventListener('input', e => {
+        const value = e.target.value;
+        values.X = adjustedValue(value);
+        const sliderValue = Object.values(values).join(',');
+        editableBox.style.setProperty('--smooth-corners', sliderValue);
+        valueX.innerHTML = `X = ${values.X}`;
+
+        if (!isAssymetric) {
+          values.Y = values.X;
+          valueY.innerHTML = `Y = ${values.Y}`;
+          rangeY.value = adjustedPosition(values.Y);
+          valueCSS.innerHTML = values.X.toString();
+        } else valueCSS.innerHTML = sliderValue;
+      });
+
+      rangeY.addEventListener('input', e => {
+        const value = e.target.value;
+        values.Y = adjustedValue(value);
+        const sliderValue = Object.values(values).join(',');
+        editableBox.style.setProperty('--smooth-corners', sliderValue);
+        valueY.innerHTML = `Y = ${values.Y}`;
+        valueCSS.innerHTML = sliderValue;
+      });
     </script>
   </body>
 </html>
