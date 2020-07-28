@@ -8,7 +8,19 @@
 
 ### JavaScript
 
-Add [paint.js] to your web application or with `npm install smooth-corners`
+Add [paint.js] to your web application.
+
+#### CDN
+
+```html
+```
+
+#### NPM
+
+Run `npm install smooth-corners` and either:
+- Require with `require('smooth-corners')`
+- Import with `import 'smooth-corners'`
+- Bundle with `node_modules/smooth-corners/paint.js`
 
 ### CSS
 
