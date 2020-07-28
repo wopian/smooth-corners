@@ -1,17 +1,17 @@
 <h1 align=center>Smooth Corners</h1>
 
 <p align=center>
-  <a href=https://www.npmjs.com/package/smooth-corners><img alt=npm src=https://flat.badgen.net/npm/v/smooth-corners></a>
-  <a href=https://www.npmjs.com/package/smooth-corners><img alt=npm src=https://flat.badgen.net/npm/dt/smooth-corners></a>
-  <a href='https://david-dm.org/wopian/smooth-corners'><img alt=deps src=https://flat.badgen.net/david/dep/wopian/smooth-corners></a>
-  <a href='https://bundlephobia.com/result?p=smooth-corners'><img alt=bundlephobia src='https://flat.badgen.net/bundlephobia/minzip/smooth-corners?label=library%20size'></a>
+  <a href='https://www.npmjs.com/package/smooth-corners'><img alt='npm' src='https://flat.badgen.net/npm/v/smooth-corners'></a>
+  <a href='https://www.npmjs.com/package/smooth-corners'><img alt='npm' src='https://flat.badgen.net/npm/dt/smooth-corners'></a>
+  <a href='https://david-dm.org/wopian/smooth-corners'><img alt='deps' src=https://flat.badgen.net/david/dep/wopian/smooth-corners></a>
+  <a href='https://bundlephobia.com/result?p=smooth-corners'><img alt='bundlephobia' src='https://flat.badgen.net/bundlephobia/minzip/smooth-corners?label=library%20size'></a>
 </p>
 
 <p align=center>
-  <a href='https://github.com/wopian/smooth-corners/actions'><img alt=checks src='https://flat.badgen.net/github/checks/wopian/smooth-corners'></a>
-  <!--<a href=https://github.com/wopian/smooth-corners/network/dependents><img alt=repoDependants src=https://flat.badgen.net/github/dependents-repo/wopian/smooth-corners></a>-->
-  <a href=https://github.com/wopian/smooth-corners/graphs/contributors><img alt=devDeps src=https://flat.badgen.net/github/contributors/wopian/smooth-corners></a>
-  <a href=https://github.com/sponsors/wopian><img alt=sponsor src='https://flat.badgen.net/badge/sponsor/%E2%9D%A4/pink?icon=github'></a>
+  <a href='https://github.com/wopian/smooth-corners/actions'><img alt='checks' src='https://flat.badgen.net/github/checks/wopian/smooth-corners'></a>
+  <!--<a href='https://github.com/wopian/smooth-corners/network/dependents'><img alt='repoDependants' src='https://flat.badgen.net/github/dependents-repo/wopian/smooth-corners'></a>-->
+  <a href='https://github.com/wopian/smooth-corners/graphs/contributors'><img alt='devDeps' src='https://flat.badgen.net/github/contributors/wopian/smooth-corners'></a>
+  <a href='https://github.com/sponsors/wopian'><img alt='sponsor' src='https://flat.badgen.net/badge/sponsor/%E2%9D%A4/pink?icon=github'></a>
 </p>
 
 <p align=center>Superellipse masks using the <a href='https://developer.mozilla.org/en-US/docs/Web/Houdini'>CSS Houdini</a> API</p>
@@ -75,6 +75,7 @@ Download [paint.js] or install with `npm install smooth-corners`
 // src/assets/paint.js
 import 'smooth-corners' // ES Modules
 ```
+
 ```js
 // src/assets/paint.js
 require('smooth-corners') // CommonJS
