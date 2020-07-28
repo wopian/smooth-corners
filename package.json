@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "CSS superellipse masks with the Houdini API",
   "main": "paint.js",
+  "browser": "paint.js",
   "scripts": {
     "start": "serve",
     "build": "echo This is a static template, there is no bundler or bundling involved!"

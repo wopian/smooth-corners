@@ -6,22 +6,6 @@
 
 ## Usage
 
-### JavaScript
-
-Add [paint.js] to your web application.
-
-#### CDN
-
-```html
-```
-
-#### NPM
-
-Run `npm install smooth-corners` and either:
-- Require with `require('smooth-corners')`
-- Import with `import 'smooth-corners'`
-- Bundle with `node_modules/smooth-corners/paint.js`
-
 ### CSS
 
 Add `mask-image: paint(smooth-corners)` to the elements you want to mask
@@ -38,10 +22,10 @@ Without a `--smooth-corners` variable set it will default to a value of `4`
 }
 ```
 
-#### Customise Superellipse Shape
+#### Customise Shape / Roundness
 
 ```css
-.round {
+.mask {
   /* Integer 1 to 100. Scopped locally or globally in :root {}
      2 is a perfect circle
      < 2 are diamonds / asteroids
@@ -52,21 +36,42 @@ Without a `--smooth-corners` variable set it will default to a value of `4`
   background: #d01257; /* So you can see it */
 ```
 
-### HTML
+### Registering the Paint Worklet
 
 Register the [Paint Worklet] to the distributed path of [paint.js].
 
-E.g This example would request `https://wopian.github.io/smooth-corners/paint.js` when run:
+#### Register with a CDN (preferred)
+
+Use any CDN that serves packages from the NPM registry, for example:
+
+- https://unpkg.com/smooth-corners
+- https://cdn.jsdelivr.net/npm/smooth-corners/paint.js
 
 ```html
-<body>
-  <div class='round'></div>
-  <div class='squircle'></div>
-  ...
-  <script>
-    if (CSS && 'paintWorklet' in CSS) CSS.paintWorklet.addModule('paint.js')
-  </script>
-</body>
+<script>
+  if (CSS && 'paintWorklet' in CSS) CSS.paintWorklet.addModule('https://unpkg.com/smooth-corners')
+</script>
+```
+
+#### Register with a file path
+
+Download [paint.js] or install with `npm install smooth-corners`
+
+```js
+// src/assets/paint.js
+import 'smooth-corners' // ES Modules
+```
+```js
+// src/assets/paint.js
+require('smooth-corners') // CommonJS
+```
+
+Like Web Workers, the [Paint Worklet] API requests the module path in the browser during runtime and must be a seperate entryfile. This is not the path to the source code location.
+
+```html
+<script>
+  if (CSS && 'paintWorklet' in CSS) CSS.paintWorklet.addModule('/assets/paint.js')
+</script>
 ```
 
 ### Result
