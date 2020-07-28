@@ -1,24 +1,31 @@
 {
   "name": "smooth-corners",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.html",
+  "description": "CSS superellipse masks with the Houdini API",
+  "main": "paint.js",
   "scripts": {
     "start": "serve",
     "build": "echo This is a static template, there is no bundler or bundling involved!"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/codesandbox-app/static-template.git"
-  },
-  "keywords": [],
-  "author": "Ives van Hoorne",
+  "repository": "https://github.com/wopian/smooth-corners",
+  "keywords": [
+    "CSS",
+    "Houdini",
+    "Superellipse",
+    "PaintWorklet",
+    "Squircle",
+    "Hypoellipse",
+    "Hyperellipse",
+    "Asteroid"
+  ],
+  "author": "James Harris <wopian@wopian.me>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/codesandbox-app/static-template/issues"
+    "url": "https://github.com/wopian/smooth-corners/issues"
   },
-  "homepage": "https://github.com/codesandbox-app/static-template#readme",
+  "homepage": "https://github.com/wopian/smooth-corners#readme",
   "devDependencies": {
     "serve": "^11.2.0"
-  }
+  },
+  "private": false
 }
