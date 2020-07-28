@@ -1,6 +1,6 @@
 class SmoothCornersPainter {
   static get inputProperties() {
-    return ["--smooth-corners"];
+    return ['--smooth-corners'];
   }
 
   superellipse(a, b, n) {
@@ -19,7 +19,7 @@ class SmoothCornersPainter {
   }
 
   paint(ctx, geom, properties) {
-    const m = properties.get("--smooth-corners").toString() || 4;
+    const m = properties.get('--smooth-corners').toString() || 4;
     let n = m;
     if (m > 100) n = 100;
     if (m < 0.00000000001) n = 0.00000000001;
@@ -28,7 +28,7 @@ class SmoothCornersPainter {
     const height = geom.height / 2;
     const smooth = this.superellipse(width, height, n);
 
-    ctx.fillStyle = "black";
+    ctx.fillStyle = 'black';
     ctx.setTransform(1, 0, 0, 1, width, height);
     ctx.beginPath();
 
@@ -44,4 +44,4 @@ class SmoothCornersPainter {
 }
 
 // eslint-disable-next-line no-undef
-registerPaint("smooth-corners", SmoothCornersPainter);
+registerPaint('smooth-corners', SmoothCornersPainter);
