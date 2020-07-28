@@ -26,7 +26,7 @@ Without a `--smooth-corners` variable set it will default to a value of `4`
 
 ```css
 .mask {
-  /* Integer 1 to 100. Scopped locally or globally in :root {}
+  /* Integer 1 to 100. Scoped locally or globally in :root {}
      2 is a perfect circle
      < 2 are diamonds / asteroids
      > 2 are rounded squares */
