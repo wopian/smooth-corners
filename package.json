@@ -1,6 +1,6 @@
 {
   "name": "smooth-corners",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "CSS superellipse masks with the Houdini API",
   "main": "paint.js",
   "browser": "paint.js",
