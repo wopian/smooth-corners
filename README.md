@@ -22,11 +22,6 @@
 
 [Live demo](https://wopian.github.io/smooth-corners/) featuring several different `--smooth-corners` values and an interactive editor
 
-- `5`, iOS App Icon
-- `4`, Squircle (default)
-- `2.6`, KakaoTalk profile icon
-- `0.6`, [Astroid]
-
 ## Usage
 
 ### CSS
@@ -43,23 +38,31 @@ Add `mask-image: paint(smooth-corners)` to the elements you want to mask
 }
 ```
 
-#### Customise Shape / Roundness
+#### Customise Curvature
 
-You can customise the mask shape by using a CSS custom property. This can be scoped locally to the selector or defined globally in `:root {}`
+You can customise the mask curvature by using a CSS variable. This can be scoped locally to the selector or defined globally in `:root {}`
 
-`--smooth-corners: nA[, nB]`
+`--smooth-corners: X[, Y]`
 
-- **nA** - Float,
+- **X** - Float, Curvature of the X axis
+- **Y** - Float, Curvature of the Y axios (optional, defaults to X axis)
 
+##### Shapes by **X** value:
+
+- `0.6` - [Astroid]
+- `< 1` - Concave rhombus
+- `= 1` - Rhombus
+- `> 1 and < 2` - Convex rhombus
+- `= 2` - Circle
+- `> 2` - Rounded rectangles
+- `2.6` - KakaoTalk profile icon
+- `4.0` - Squircle
+- `5.0` - iOS app icon
+
+###### Example
 
 ```css
 .mask {
-  /* Integer 0 to 100. Scoped locally or globally in :root {}
-     < 1 are concave rhombuses
-     = 1 is a perfect rhombus
-     > 1 and <2 are convex rhombuses>
-     = 2 is a perfect circle
-     > 2 are rounded squares */
   --smooth-corners: 3;
   mask-image: paint(smooth-corners);
   -webkit-mask-image: paint(smooth-corners);
