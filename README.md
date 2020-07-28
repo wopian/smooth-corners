@@ -48,4 +48,4 @@ Add [paint.js] to your web application.
 
 ### Result
 
-![]()
+![2 examples: A rounded pink square and a pink squircle](https://raw.githubusercontent.com/wopian/smooth-corners/master/example.png)
