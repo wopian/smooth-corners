@@ -28,7 +28,7 @@ class SmoothCornersPainter {
     const height = geom.height / 2;
     const smooth = this.superellipse(width, height, n);
 
-    ctx.fillStyle = 'black';
+    ctx.fillStyle = '#000';
     ctx.setTransform(1, 0, 0, 1, width, height);
     ctx.beginPath();
 
