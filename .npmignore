@@ -1,5 +1,7 @@
 .github
 .mdlrc
+.browserslistrc
 example.png
 index.html
 sandbox.config.json
+yarn.lock

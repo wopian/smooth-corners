@@ -2,11 +2,15 @@
   "name": "smooth-corners",
   "version": "1.0.4",
   "description": "CSS superellipse masks with the Houdini API",
-  "main": "paint.js",
-  "browser": "paint.js",
+  "source": "paint.js",
+  "main": "lib/paint.js",
+  "module": "lib/paint.js",
+  "unpkg": "lib/paint.js",
+  "browser": "lib/paint.js",
   "scripts": {
     "start": "serve",
-    "build": "echo This is a static template, there is no bundler or bundling involved!"
+    "build": "microbundle --no-sourcemap --compress --format=es",
+    "dev": "microbundle watch --no-sourcemap"
   },
   "repository": "https://github.com/wopian/smooth-corners",
   "keywords": [
@@ -26,6 +30,7 @@
   },
   "homepage": "https://github.com/wopian/smooth-corners#readme",
   "devDependencies": {
+    "microbundle": "^0.12.3",
     "serve": "^11.2.0"
   },
   "private": false

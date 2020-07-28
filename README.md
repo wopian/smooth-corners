@@ -47,7 +47,7 @@ You can customise the mask curvature by using a CSS variable. This can be scoped
 - **X** - Float, Curvature of the X axis
 - **Y** - Float, Curvature of the Y axis (optional, defaults to X axis)
 
-##### Shapes by **X** value:
+##### Shapes by **X** value
 
 - `0.6` - [Astroid]
 - `< 1` - Concave rhombus
@@ -78,7 +78,7 @@ Register the [Paint Worklet] to the distributed path of [paint.js].
 Use any CDN that serves packages from the NPM registry, for example:
 
 - [unpkg.com/smooth-corners](https://unpkg.com/smooth-corners)
-- [cdn.jsdelivr.net/npm/smooth-corners/paint.js](https://cdn.jsdelivr.net/npm/smooth-corners/paint.js)
+- [cdn.jsdelivr.net/npm/smooth-corners/paint.js](https://cdn.jsdelivr.net/npm/smooth-corners/lib/paint.js)
 
 ```html
 <script>
