@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 1rem;
+      }
+
+      section {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+        justify-content: center;
+      }
+
+      .box,
+      p {
+        display: grid;
+        place-items: center;
+        width: 10rem;
+      }
+
+      .box {
+        height: 10rem;
+        color: white;
+        background: black;
+        background: paint(smooth-corners);
+      }
+
+      .avatar {
+        width: 10rem;
+        height: 10rem;
+      }
+
+      .poster {
+        width: 10rem;
+      }
+
+      .box,
+      .avatar,
+      .poster {
+        flex-shrink: 0;
+        object-fit: cover;
+        object-position: 50% 100%;
+      }
+
+      .mask {
+        background: linear-gradient(deeppink, orangered);
+        mask-image: paint(smooth-corners);
+        -webkit-mask-image: paint(smooth-corners);
+      }
+
+      .square {
+        --smooth-corners: 5;
+      }
+
+      .circle {
+        --smooth-corners: 2.1;
+      }
+
+      .circleish {
+        --smooth-corners: 2.758;
+      }
+
+      .diamond-in {
+        --smooth-corners: 0.9;
+      }
+
+      .diamond-out {
+        --smooth-corners: 1.1;
+      }
+
+      .custom-6 {
+        --smooth-corners: 6;
+      }
+
+      .custom-8 {
+        --smooth-corners: 8;
+      }
+
+      .custom-10 {
+        --smooth-corners: 10;
+      }
+
+      .custom-12 {
+        --smooth-corners: 12;
+      }
+
+      .custom-14 {
+        --smooth-corners: 14;
+      }
+
+      .custom-16 {
+        --smooth-corners: 16;
+      }
+
+      hr {
+        margin: 0 0 1rem;
+      }
+      p {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Gradient -->
+    <section>
+      <div class="box square mask">5</div>
+      <div class="box mask">4</div>
+      <div class="box circleish mask">2.758</div>
+      <div class="box circle mask">2.1</div>
+      <div class="box diamond-out mask">0.9</div>
+      <div class="box diamond-in mask">1.1</div>
+    </section>
+
+    <!-- Black -->
+
+    <section>
+      <div class="box square">5</div>
+      <div class="box">4</div>
+      <div class="box circleish">2.758</div>
+      <div class="box circle">2.1</div>
+      <div class="box diamond-out">0.9</div>
+      <div class="box diamond-in">1.1</div>
+    </section>
+
+    <!-- Avatar -->
+
+    <section>
+      <img
+        src="https://media.kitsu.io/users/avatars/42603/large.png?1590004137"
+        class="avatar mask square"
+      />
+      <img
+        src="https://media.kitsu.io/users/avatars/42603/large.png?1590004137"
+        class="avatar mask"
+      />
+      <img
+        src="https://media.kitsu.io/users/avatars/42603/large.png?1590004137"
+        class="avatar mask circleish"
+      />
+      <img
+        src="https://media.kitsu.io/users/avatars/42603/large.png?1590004137"
+        class="avatar mask circle"
+      />
+      <img
+        src="https://media.kitsu.io/users/avatars/42603/large.png?1590004137"
+        class="avatar mask diamond-out"
+      />
+      <img
+        src="https://media.kitsu.io/users/avatars/42603/large.png?1590004137"
+        class="avatar mask diamond-in"
+      />
+    </section>
+
+    <!-- Poster as Avatar (Kakushigoto) -->
+
+    <section>
+      <img
+        src="https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011"
+        class="avatar mask square"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011"
+        class="avatar mask"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011"
+        class="avatar mask circleish"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011"
+        class="avatar mask circle"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011"
+        class="avatar mask diamond-out"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011"
+        class="avatar mask diamond-in"
+      />
+    </section>
+
+    <!-- Poster (Kakushigoto) -->
+
+    <section>
+      <img
+        src="https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011"
+        class="poster mask square"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011"
+        class="poster mask"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011"
+        class="poster mask circleish"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011"
+        class="poster mask circle"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011"
+        class="poster mask diamond-out"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011"
+        class="poster mask diamond-in"
+      />
+    </section>
+
+    <section>
+      <p>6</p>
+      <p>8</p>
+      <p>10</p>
+      <p>12</p>
+      <p>14</p>
+      <p>16</p>
+    </section>
+
+    <section>
+      <img
+        src="https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011"
+        class="poster mask custom-6"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011"
+        class="poster mask custom-8"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011"
+        class="poster mask custom-10"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011"
+        class="poster mask custom-12"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011"
+        class="poster mask custom-14"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011"
+        class="poster mask custom-16"
+      />
+    </section>
+
+    <section>
+      <img
+        src="https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011"
+        class="avatar mask custom-6"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011"
+        class="avatar mask custom-8"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011"
+        class="avatar mask custom-10"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011"
+        class="avatar mask custom-12"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011"
+        class="avatar mask custom-14"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011"
+        class="avatar mask custom-16"
+      />
+    </section>
+
+    <hr />
+
+    <section>
+      <p>5</p>
+      <p>4</p>
+      <p>2.758</p>
+      <p>2.1</p>
+      <p>0.9</p>
+      <p>1.1</p>
+    </section>
+
+    <!-- Poster as Avatar (Howl no Ugoku Shiro) -->
+
+    <section>
+      <img
+        src="https://media.kitsu.io/anime/poster_images/395/large.jpg?1431655416"
+        class="avatar mask square"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/395/large.jpg?1431655416"
+        class="avatar mask"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/395/large.jpg?1431655416"
+        class="avatar mask circleish"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/395/large.jpg?1431655416"
+        class="avatar mask circle"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/395/large.jpg?1431655416"
+        class="avatar mask diamond-out"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/395/large.jpg?1431655416"
+        class="avatar mask diamond-in"
+      />
+    </section>
+
+    <!-- Poster (Howl no Ugoku Shiro) -->
+
+    <section>
+      <img
+        src="https://media.kitsu.io/anime/poster_images/395/large.jpg?1431655416"
+        class="poster mask square"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/395/large.jpg?1431655416"
+        class="poster mask"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/395/large.jpg?1431655416"
+        class="poster mask circleish"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/395/large.jpg?1431655416"
+        class="poster mask circle"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/395/large.jpg?1431655416"
+        class="poster mask diamond-out"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/395/large.jpg?1431655416"
+        class="poster mask diamond-in"
+      />
+    </section>
+
+    <section>
+      <p>6</p>
+      <p>8</p>
+      <p>10</p>
+      <p>12</p>
+      <p>14</p>
+      <p>16</p>
+    </section>
+
+    <section>
+      <img
+        src="https://media.kitsu.io/anime/poster_images/395/large.jpg?1431655416"
+        class="poster mask custom-6"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/395/large.jpg?1431655416"
+        class="poster mask custom-8"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/395/large.jpg?1431655416"
+        class="poster mask custom-10"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/395/large.jpg?1431655416"
+        class="poster mask custom-12"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/395/large.jpg?1431655416"
+        class="poster mask custom-14"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/395/large.jpg?1431655416"
+        class="poster mask custom-16"
+      />
+    </section>
+
+    <section>
+      <img
+        src="https://media.kitsu.io/anime/poster_images/395/large.jpg?1431655416"
+        class="avatar mask custom-6"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/395/large.jpg?1431655416"
+        class="avatar mask custom-8"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/395/large.jpg?1431655416"
+        class="avatar mask custom-10"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/395/large.jpg?1431655416"
+        class="avatar mask custom-12"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/395/large.jpg?1431655416"
+        class="avatar mask custom-14"
+      />
+      <img
+        src="https://media.kitsu.io/anime/poster_images/395/large.jpg?1431655416"
+        class="avatar mask custom-16"
+      />
+    </section>
+    <script>
+      if ("paintWorklet" in CSS) CSS.paintWorklet.addModule("paint.js");
+    </script>
+  </body>
+</html>
