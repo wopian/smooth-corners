@@ -3,7 +3,7 @@
 <p align=center>
   <a href='https://www.npmjs.com/package/smooth-corners'><img alt='npm' src='https://flat.badgen.net/npm/v/smooth-corners'></a>
   <a href='https://www.npmjs.com/package/smooth-corners'><img alt='npm' src='https://flat.badgen.net/npm/dt/smooth-corners'></a>
-  <a href='https://david-dm.org/wopian/smooth-corners'><img alt='deps' src=https://flat.badgen.net/david/dep/wopian/smooth-corners></a>
+  <a href='https://david-dm.org/wopian/smooth-corners'><img alt='deps' src='https://flat.badgen.net/david/dep/wopian/smooth-corners'></a>
   <a href='https://bundlephobia.com/result?p=smooth-corners'><img alt='bundlephobia' src='https://flat.badgen.net/bundlephobia/minzip/smooth-corners?label=library%20size'></a>
 </p>
 
@@ -58,8 +58,8 @@ Register the [Paint Worklet] to the distributed path of [paint.js].
 
 Use any CDN that serves packages from the NPM registry, for example:
 
-- https://unpkg.com/smooth-corners
-- https://cdn.jsdelivr.net/npm/smooth-corners/paint.js
+- [unpkg.com/smooth-corners](https://unpkg.com/smooth-corners)
+- [cdn.jsdelivr.net/npm/smooth-corners/paint.js](https://cdn.jsdelivr.net/npm/smooth-corners/paint.js)
 
 ```html
 <script>
