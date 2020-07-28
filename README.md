@@ -16,7 +16,7 @@
 
 <p align=center>Superellipse masks using the <a href='https://developer.mozilla.org/en-US/docs/Web/Houdini'>CSS Houdini</a> API</p>
 
-![](https://repository-images.githubusercontent.com/283091953/46814880-d08f-11ea-8933-05a3818dc9b7)
+![Static demo of Smooth Corners][CTA]
 
 ## Usage
 
@@ -95,4 +95,5 @@ Like Web Workers, the [Paint Worklet] API requests the module path in the browse
 
 [paint.js]:https://wopian.github.io/smooth-corners/paint.js
 [Paint Worklet]:https://developer.mozilla.org/en-US/docs/Web/API/PaintWorklet
-[Example]:https://raw.githubusercontent.com/wopian/smooth-corners/master/example.png
+[CTA]:https://raw.githubusercontent.com/wopian/smooth-corners/master/.github/images/cta.png
+[Example]:https://raw.githubusercontent.com/wopian/smooth-corners/master/.github/images/example.png
