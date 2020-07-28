@@ -45,7 +45,7 @@ You can customise the mask curvature by using a CSS variable. This can be scoped
 `--smooth-corners: X[, Y]`
 
 - **X** - Float, Curvature of the X axis
-- **Y** - Float, Curvature of the Y axios (optional, defaults to X axis)
+- **Y** - Float, Curvature of the Y axis (optional, defaults to X axis)
 
 ##### Shapes by **X** value:
 
