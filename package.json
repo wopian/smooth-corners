@@ -13,6 +13,7 @@
     "dev": "microbundle watch --no-sourcemap"
   },
   "repository": "https://github.com/wopian/smooth-corners",
+  "funding": "https://github.com/sponsors/wopian",
   "keywords": [
     "CSS",
     "Houdini",
