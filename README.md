@@ -22,6 +22,21 @@
 
 [Live demo](https://wopian.github.io/smooth-corners/) featuring several different `--smooth-corners` values and an interactive editor
 
+## Limitations
+
+To avoid leaking visited sites, the CSS Paint API is disabled on Chromium-based browsers for `<a>` elements with an `href` attribute and all children of that element. For further details see the following:
+
+- The CSS Painting API [Privacy Considerations section](https://drafts.css-houdini.org/css-paint-api/#privacy-considerations)
+- The CSS Painting API spec issue [“CSS Paint API leaks browsing history”](https://github.com/w3c/css-houdini-drafts/issues/791)
+
+To work around this limitation, `mask-image: paint(smooth-corners)` can be applied to the parent element of the `<a>` element, for example:
+
+```html
+<div style='mask-image: paint(smooth-corners)'>
+  <a href='https://github.com/wopian/smooth-corners'>Smooth Corners</a>
+</div>
+```
+
 ## Usage
 
 ### CSS
