@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/wopian/smooth-corners#readme",
   "devDependencies": {
-    "microbundle": "^0.12.3",
+    "microbundle": "^0.14.0",
     "serve": "^11.2.0"
   },
   "private": false,
