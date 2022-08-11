@@ -37,7 +37,7 @@
   "private": false,
   "renovate": {
     "extends": [
-      "@wopian"
+      "github>wopian/renovate-config"
     ]
   }
 }
