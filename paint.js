@@ -38,8 +38,8 @@ class SmoothCornersPainter {
     const smooth = this.superellipse(
       width,
       height,
-      parseFloat(nX, 10),
-      parseFloat(nY, 10)
+      parseFloat(nX),
+      parseFloat(nY)
     );
 
     ctx.fillStyle = "#000";
