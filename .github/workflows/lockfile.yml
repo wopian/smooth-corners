@@ -1,5 +1,8 @@
 name: Yarn
-on: [pull_request]
+on:
+  pull_request:
+    branches:
+      - renovate/**
 jobs:
   yarn_lock_changes:
     name: Lock File Changes
