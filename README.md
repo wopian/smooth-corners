@@ -3,7 +3,6 @@
 <p align=center>
   <a href='https://www.npmjs.com/package/smooth-corners'><img alt='npm' src='https://flat.badgen.net/npm/v/smooth-corners'></a>
   <a href='https://www.npmjs.com/package/smooth-corners'><img alt='npm' src='https://flat.badgen.net/npm/dt/smooth-corners'></a>
-  <a href='https://david-dm.org/wopian/smooth-corners'><img alt='deps' src='https://flat.badgen.net/david/dep/wopian/smooth-corners'></a>
   <a href='https://bundlephobia.com/result?p=smooth-corners'><img alt='bundlephobia' src='https://flat.badgen.net/bundlephobia/minzip/smooth-corners?label=library%20size'></a>
 </p>
 
