@@ -224,9 +224,28 @@
           animation: octocat-wave 560ms ease-in-out;
         }
       }
+      
+      .paint-api {
+        display: none;
+      }
+      
+      .no-paint-api {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        background: yellow;
+        padding: 2rem;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      }
     </style>
   </head>
   <body>
+    <div class="paint-api">
+      Your browser does not support the Houdini CSS Paint API yet!
+      <a href="https://ishoudinireadyyet.com/">View supported browsers</a>
+    </div>
     <a
       href='https://github.com/wopian/smooth-corners'
       class='github-corner'
@@ -543,6 +562,7 @@ mask-image: paint(smooth-corners);
     </section>
     <script>
       if (CSS && 'paintWorklet' in CSS) CSS.paintWorklet.addModule('paint.js');
+      else document.getElementsByClassName('paint-api')[0].classList.add('no-paint-api');
     </script>
     <script>
       const minpos = 0;
