@@ -230,7 +230,6 @@
       }
       
       .no-paint-api {
-        display: unset;
         position: fixed;
         top: 0;
         right: 0;
@@ -563,7 +562,11 @@ mask-image: paint(smooth-corners);
     </section>
     <script>
       if (CSS && 'paintWorklet' in CSS) CSS.paintWorklet.addModule('paint.js');
-      else document.getElementsByClassName('paint-api')[0].classList.add('no-paint-api');
+      else {
+        const element = document.getElementsByClassName('paint-api')[0]
+        element.classList.add('no-paint-api');
+        element.classList.remove('paint-api');
+      }
     </script>
     <script>
       const minpos = 0;
