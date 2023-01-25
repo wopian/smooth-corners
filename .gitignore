@@ -1,2 +1,9 @@
 node_modules
 lib
+
+.yarn/cache
+.yarn/unplugged
+.yarn/sdks
+.yarn/*.gz
+.pnp.cjs
+.pnp.loader.mjs
