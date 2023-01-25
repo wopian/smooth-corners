@@ -1,1 +1,2 @@
 index.html linguist-vendored
+.yarn/ export-ignore
