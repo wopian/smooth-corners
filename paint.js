@@ -1,11 +1,11 @@
 class SmoothCornersPainter {
   static get inputProperties() {
-    return ["--smooth-corners"];
+    return ['--smooth-corners'];
   }
 
   superellipse(a, b, nX = 4, nY) {
     if (Number.isNaN(nX)) nX = 4;
-    if (typeof nY === "undefined" || Number.isNaN(nY)) nY = nX;
+    if (typeof nY === 'undefined' || Number.isNaN(nY)) nY = nX;
     if (nX > 100) nX = 100;
     if (nY > 100) nY = 100;
     if (nX < 0.00000000001) nX = 0.00000000001;
@@ -28,10 +28,10 @@ class SmoothCornersPainter {
 
   paint(ctx, geom, properties) {
     const [nX, nY] = properties
-      .get("--smooth-corners")
+      .get('--smooth-corners')
       .toString()
-      .replace(/ /g, "")
-      .split(",");
+      .replace(/ /g, '')
+      .split(',');
 
     const width = geom.width / 2;
     const height = geom.height / 2;
@@ -42,7 +42,7 @@ class SmoothCornersPainter {
       parseFloat(nY)
     );
 
-    ctx.fillStyle = "#000";
+    ctx.fillStyle = '#000';
     ctx.setTransform(1, 0, 0, 1, width, height);
     ctx.beginPath();
 
@@ -58,4 +58,4 @@ class SmoothCornersPainter {
 }
 
 // eslint-disable-next-line no-undef
-registerPaint("smooth-corners", SmoothCornersPainter);
+registerPaint('smooth-corners', SmoothCornersPainter);
