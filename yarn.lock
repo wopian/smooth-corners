@@ -2055,7 +2055,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/commit-analyzer@npm:^9.0.2, @semantic-release/commit-analyzer@npm:~9.0.2":
+"@semantic-release/commit-analyzer@npm:^9.0.2":
   version: 9.0.2
   resolution: "@semantic-release/commit-analyzer@npm:9.0.2"
   dependencies:
@@ -2069,6 +2069,23 @@ __metadata:
   peerDependencies:
     semantic-release: ">=18.0.0-beta.1"
   checksum: f7f759e608c0c044ba8ec1b3aabad4305ac057cc45156b60a2f8dc355f5193b84ff7c661aefd4522659172f4d6ecf80219b8b28714bd76e4eb32e734b2e6ead9
+  languageName: node
+  linkType: hard
+
+"@semantic-release/commit-analyzer@npm:~10.0.0":
+  version: 10.0.0
+  resolution: "@semantic-release/commit-analyzer@npm:10.0.0"
+  dependencies:
+    conventional-changelog-angular: ^5.0.0
+    conventional-commits-filter: ^2.0.0
+    conventional-commits-parser: ^3.2.3
+    debug: ^4.0.0
+    import-from: ^4.0.0
+    lodash-es: ^4.17.21
+    micromatch: ^4.0.2
+  peerDependencies:
+    semantic-release: ">=20.1.0"
+  checksum: aaab0ce58eefb06f5dbbfad040467620cff4f533d77c92784149bd121c5bf9098562cdc7b37088ae4d3dfb42765cf3343c8653ced049cdf635de88c5eb470f78
   languageName: node
   linkType: hard
 
@@ -8280,7 +8297,7 @@ __metadata:
   resolution: "smooth-corners@workspace:."
   dependencies:
     "@semantic-release/changelog": ~6.0.2
-    "@semantic-release/commit-analyzer": ~9.0.2
+    "@semantic-release/commit-analyzer": ~10.0.0
     "@semantic-release/github": ~8.1.0
     "@semantic-release/npm": ~10.0.0
     "@semantic-release/release-notes-generator": ~11.0.0
