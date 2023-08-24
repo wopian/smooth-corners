@@ -7975,9 +7975,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semantic-release@npm:~21.0.0":
-  version: 21.0.9
-  resolution: "semantic-release@npm:21.0.9"
+"semantic-release@npm:~21.1.0":
+  version: 21.1.1
+  resolution: "semantic-release@npm:21.1.1"
   dependencies:
     "@semantic-release/commit-analyzer": ^10.0.0
     "@semantic-release/error": ^4.0.0
@@ -8009,7 +8009,7 @@ __metadata:
     yargs: ^17.5.1
   bin:
     semantic-release: bin/semantic-release.js
-  checksum: 7da69393519da1ca6f14b29c38135f5fa48bd241da07eb0705da10a1707021a935960234ada8d0e7d49b8f63c00e1001cfb93683e0d8dbe89379d4857bcfc7ef
+  checksum: 46ebaeac46d7dfe4610617a79b6ceee3b1bd5fb7025cb800ce523b91d22a1f35ff31143164dc4fe7d15a1139488652cde887946b8f33e8839e8ba9875c9f83af
   languageName: node
   linkType: hard
 
@@ -8209,7 +8209,7 @@ __metadata:
     "@semantic-release/npm": ~10.0.0
     "@semantic-release/release-notes-generator": ~11.0.0
     microbundle: ^0.15.0
-    semantic-release: ~21.0.0
+    semantic-release: ~21.1.0
     serve: ^14.0.0
   languageName: unknown
   linkType: soft
