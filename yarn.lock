@@ -2003,7 +2003,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/commit-analyzer@npm:^11.0.0, @semantic-release/commit-analyzer@npm:~11.0.0":
+"@semantic-release/commit-analyzer@npm:^11.0.0":
+  version: 11.1.0
+  resolution: "@semantic-release/commit-analyzer@npm:11.1.0"
+  dependencies:
+    conventional-changelog-angular: ^7.0.0
+    conventional-commits-filter: ^4.0.0
+    conventional-commits-parser: ^5.0.0
+    debug: ^4.0.0
+    import-from-esm: ^1.0.3
+    lodash-es: ^4.17.21
+    micromatch: ^4.0.2
+  peerDependencies:
+    semantic-release: ">=20.1.0"
+  checksum: 773e855bfee6d917f4145e1c85940cdf028d00efa197dabea4a86b8d31c6d5609767da147c93ec61d4cc36b74b1c10703482cc15ecab9c468c52e4e177863262
+  languageName: node
+  linkType: hard
+
+"@semantic-release/commit-analyzer@npm:~11.0.0":
   version: 11.0.0
   resolution: "@semantic-release/commit-analyzer@npm:11.0.0"
   dependencies:
@@ -2083,7 +2100,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/release-notes-generator@npm:^12.0.0, @semantic-release/release-notes-generator@npm:~12.0.0":
+"@semantic-release/release-notes-generator@npm:^12.0.0":
+  version: 12.1.0
+  resolution: "@semantic-release/release-notes-generator@npm:12.1.0"
+  dependencies:
+    conventional-changelog-angular: ^7.0.0
+    conventional-changelog-writer: ^7.0.0
+    conventional-commits-filter: ^4.0.0
+    conventional-commits-parser: ^5.0.0
+    debug: ^4.0.0
+    get-stream: ^7.0.0
+    import-from-esm: ^1.0.3
+    into-stream: ^7.0.0
+    lodash-es: ^4.17.21
+    read-pkg-up: ^11.0.0
+  peerDependencies:
+    semantic-release: ">=20.1.0"
+  checksum: 7e177c77a66091364ffc419ba5deba0d8e1b58857da40fbd34712e8dbe5a8b18def19eba5c5cbefc396402573c334de789683ee276eee82edb9b347d6c17f71c
+  languageName: node
+  linkType: hard
+
+"@semantic-release/release-notes-generator@npm:~12.0.0":
   version: 12.0.1
   resolution: "@semantic-release/release-notes-generator@npm:12.0.1"
   dependencies:
@@ -4591,6 +4628,13 @@ __metadata:
     parent-module: ^1.0.0
     resolve-from: ^4.0.0
   checksum: 2cacfad06e652b1edc50be650f7ec3be08c5e5a6f6d12d035c440a42a8cc028e60a5b99ca08a77ab4d6b1346da7d971915828f33cdab730d3d42f08242d09baa
+  languageName: node
+  linkType: hard
+
+"import-from-esm@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "import-from-esm@npm:1.0.3"
+  checksum: 6639907d79fa072ae4f5e2d6464effb83c5f453101a95605489c3ca3b1b7ec05fd0dfb4126c0219fc25bb5dc6e1d66e35afddd896f8f527dd92c57021cbe6ed0
   languageName: node
   linkType: hard
 
