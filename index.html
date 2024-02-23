@@ -28,6 +28,7 @@
       }
 
       .box,
+      .rect,
       p {
         display: grid;
         place-items: center;
@@ -36,6 +37,12 @@
 
       .box {
         height: 10rem; /* 18.5 for cta */
+        color: #fff;
+      }
+
+      .rect {
+        width: 10rem;
+        height: 30rem;
         color: #fff;
       }
 
@@ -50,7 +57,8 @@
 
       .box,
       .avatar,
-      .poster {
+      .poster,
+      .rect {
         flex-shrink: 0;
         object-fit: cover;
         object-position: 50% 100%;
@@ -60,6 +68,42 @@
         background: linear-gradient(#f34072, #d01257);
         mask-image: paint(smooth-corners);
         -webkit-mask-image: paint(smooth-corners);
+      }
+
+      .mask-v2 {
+        background: linear-gradient(#f34072, #d01257);
+        mask-image: paint(smooth-corners-v2);
+        -webkit-mask-image: paint(smooth-corners-v2);
+      }
+
+      .v2-5-1 {
+        --smooth-corners: 5;
+        --smooth-corners-radius: 1rem;
+        --smooth-corners-steps: 360;
+      }
+      
+      .v2-5-1d5 {
+        --smooth-corners: 5;
+        --smooth-corners-radius: 1.5rem;
+        --smooth-corners-steps: 360;
+      }
+
+      .v2-5-0d5 {
+        --smooth-corners: 5;
+        --smooth-corners-radius: 0.5rem;
+        --smooth-corners-steps: 360;
+      }
+
+      .v2-4-1 {
+        --smooth-corners: 4;
+        --smooth-corners-radius: 1rem;
+        --smooth-corners-steps: 360;
+      }
+
+      .v2-2-1 {
+        --smooth-corners: 2;
+        --smooth-corners-radius: 1rem;
+        --smooth-corners-steps: 360;
       }
 
       .square {
@@ -323,6 +367,28 @@ mask-image: paint(smooth-corners);
       </div>
     </section>
     <hr />
+    <section>
+      <p style="width:100%;">Update: add a smooth corner painter that better supports rectangle.</p>
+    </section>
+    <section>
+      <div>
+        <p>Original</p>
+        <img
+        src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
+        class='rect mask v2-5-1'
+        />
+      </div>
+      <div>
+        <p>V2</p>
+        <img
+        src='https://media.kitsu.io/anime/poster_images/42722/large.jpg?1580402011'
+        class='rect mask-v2 v2-5-1'
+        />
+      </div>
+      <div class="rect mask-v2 v2-5-1">V2 5 R1</div>
+      <div class="rect mask-v2 v2-4-1">V2 4</div>
+      <div class="rect mask-v2 v2-2-1">V2 5</div>
+    </section>
     <!-- Gradient -->
     <section>
       <div class='box special-16-2 mask'>16, 2</div>
