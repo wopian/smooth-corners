@@ -1914,13 +1914,13 @@ __metadata:
   linkType: hard
 
 "@pnpm/npm-conf@npm:^2.1.0":
-  version: 2.3.0
-  resolution: "@pnpm/npm-conf@npm:2.3.0"
+  version: 2.3.1
+  resolution: "@pnpm/npm-conf@npm:2.3.1"
   dependencies:
     "@pnpm/config.env-replace": "npm:^1.1.0"
     "@pnpm/network.ca-file": "npm:^1.0.1"
     config-chain: "npm:^1.1.11"
-  checksum: 10c0/605e986805b5bc46bde3d17cdc5a58f9da7da28ac331b83acde055eddefa8ca0e027844d8a97d337b8179ee6964db985214cec1206b76c29d0fcd5496c60abf2
+  checksum: 10c0/778a3a34ff7d6000a2594d2a9821f873f737bc56367865718b2cf0ba5d366e49689efe7975148316d7afd8e6f1dcef7d736fbb6ea7ef55caadd1dc93a36bb302
   languageName: node
   linkType: hard
 
@@ -2256,11 +2256,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 22.1.0
-  resolution: "@types/node@npm:22.1.0"
+  version: 22.2.0
+  resolution: "@types/node@npm:22.2.0"
   dependencies:
     undici-types: "npm:~6.13.0"
-  checksum: 10c0/553dafcb842b889c036d43b390d464e8ffcf3ca455ddd5b1a1ef98396381eafbeb0c112a15cc6bf9662b72bc25fc45efc4b6f604760e1e84c410f1b7936c488b
+  checksum: 10c0/c17900b34faecfec204f72970bd658d0c217aaf739c1bf7690c969465b6b26b77a8be1cd9ba735aadbd1dd20b5c3e4f406ec33528bf7c6eec90744886c5d5608
   languageName: node
   linkType: hard
 
@@ -2832,9 +2832,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30001646":
-  version: 1.0.30001647
-  resolution: "caniuse-lite@npm:1.0.30001647"
-  checksum: 10c0/54c07aabbe3915a67bac8015e8421aee59f2756f996fc70fc2a4743fec66e8684e620b45fb706e7e3d0fdd0b2f8dbab0309df90609ead5b45a9cd4318c8716c7
+  version: 1.0.30001651
+  resolution: "caniuse-lite@npm:1.0.30001651"
+  checksum: 10c0/7821278952a6dbd17358e5d08083d258f092e2a530f5bc1840657cb140fbbc5ec44293bc888258c44a18a9570cde149ed05819ac8320b9710cf22f699891e6ad
   languageName: node
   linkType: hard
 
@@ -3592,9 +3592,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.4":
-  version: 1.5.4
-  resolution: "electron-to-chromium@npm:1.5.4"
-  checksum: 10c0/139abf1b7281c2f3288819fb9b114f09d541ac38c9f0373f194ce2d483d82d118b8751f1b2a59b04ed0d8f414071b58508a40050fc0f23b5aa7e38d11d0cf30c
+  version: 1.5.6
+  resolution: "electron-to-chromium@npm:1.5.6"
+  checksum: 10c0/1dfef4feaa9f4e5231b8b0697f1f55623eb2ffd263b50e6d4ff995a0927653997ba116640ae06786661f8d24c7b99fa6727c0796e9c60d748f473674d78ab31e
   languageName: node
   linkType: hard
 
@@ -4037,12 +4037,12 @@ __metadata:
   linkType: hard
 
 "foreground-child@npm:^3.1.0":
-  version: 3.2.1
-  resolution: "foreground-child@npm:3.2.1"
+  version: 3.3.0
+  resolution: "foreground-child@npm:3.3.0"
   dependencies:
     cross-spawn: "npm:^7.0.0"
     signal-exit: "npm:^4.0.1"
-  checksum: 10c0/9a53a33dbd87090e9576bef65fb4a71de60f6863a8062a7b11bc1cbe3cc86d428677d7c0b9ef61cdac11007ac580006f78bd5638618d564cfd5e6fd713d6878f
+  checksum: 10c0/028f1d41000553fcfa6c4bb5c372963bf3d9bf0b1f25a87d1a6253014343fb69dfb1b42d9625d7cf44c8ba429940f3d0ff718b62105d4d4a4f6ef8ca0a53faa2
   languageName: node
   linkType: hard
 
@@ -7013,13 +7013,13 @@ __metadata:
   linkType: hard
 
 "postcss@npm:^8.2.1":
-  version: 8.4.40
-  resolution: "postcss@npm:8.4.40"
+  version: 8.4.41
+  resolution: "postcss@npm:8.4.41"
   dependencies:
     nanoid: "npm:^3.3.7"
     picocolors: "npm:^1.0.1"
     source-map-js: "npm:^1.2.0"
-  checksum: 10c0/65ed67573e5443beaeb582282ff27a6be7c7fe3b4d9fa15761157616f2b97510cb1c335023c26220b005909f007337026d6e3ff092f25010b484ad484e80ea7f
+  checksum: 10c0/c1828fc59e7ec1a3bf52b3a42f615dba53c67960ed82a81df6441b485fe43c20aba7f4e7c55425762fd99c594ecabbaaba8cf5b30fd79dfec5b52a9f63a2d690
   languageName: node
   linkType: hard
 
@@ -8269,8 +8269,8 @@ __metadata:
   linkType: hard
 
 "terser@npm:^5.0.0, terser@npm:^5.7.0":
-  version: 5.31.3
-  resolution: "terser@npm:5.31.3"
+  version: 5.31.5
+  resolution: "terser@npm:5.31.5"
   dependencies:
     "@jridgewell/source-map": "npm:^0.3.3"
     acorn: "npm:^8.8.2"
@@ -8278,7 +8278,7 @@ __metadata:
     source-map-support: "npm:~0.5.20"
   bin:
     terser: bin/terser
-  checksum: 10c0/eb2b525dada9febd3db74e94bd295f9cd7abd809e4f9c6bbc795a3048ad50fd327c15eab99db383fa820239680eef6d2dbd7dc05361769c204ddee5cf684d41e
+  checksum: 10c0/6e7c66c1f4062ee098bff3dc3c396819ebf5f1740f0615be9de39b675a78c732d199f4dcfdcd15bd65f354e37c45bb944360f532a36fe7f7d22f800ca53c2d02
   languageName: node
   linkType: hard
 
@@ -8393,9 +8393,9 @@ __metadata:
   linkType: hard
 
 "type-fest@npm:^4.6.0, type-fest@npm:^4.7.1":
-  version: 4.23.0
-  resolution: "type-fest@npm:4.23.0"
-  checksum: 10c0/c42bb14e99329ab37983d1f188e307bf0cc705a23807d9b2268d8fb2ae781d610ac6e2058dde8f9ea2b1b8ddc77ceb578d157fa81f69f8f70aef1d42fb002996
+  version: 4.24.0
+  resolution: "type-fest@npm:4.24.0"
+  checksum: 10c0/9770471a397733b17b5a9ce48ee5a4d6c042c84a4858ff4e15abd126f351c61b5fea8b7b5e55bfa34840098a920b915d5ff878db1b3c007a2512a6a9c7f21579
   languageName: node
   linkType: hard
 
@@ -8472,11 +8472,11 @@ __metadata:
   linkType: hard
 
 "uglify-js@npm:^3.1.4":
-  version: 3.19.1
-  resolution: "uglify-js@npm:3.19.1"
+  version: 3.19.2
+  resolution: "uglify-js@npm:3.19.2"
   bin:
     uglifyjs: bin/uglifyjs
-  checksum: 10c0/7609ab3f10d54de5ef014770f845c747266a969e9092d2284ca0ba18f10a4488208c1491bd8b52bd4c40cf6687b47a77c495f08e4a625babcdd57f58e34a3976
+  checksum: 10c0/51dbe1304a91cac5daa01f6a2d4ecd545fab7b7d0625e11590b923e95a6d2263b3481dcea974abfc0282b33d2c76f74f1196a992df07eae0847175bc39ea45bb
   languageName: node
   linkType: hard
 
