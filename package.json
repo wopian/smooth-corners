@@ -37,7 +37,7 @@
     "@semantic-release/npm": "~11.0.0",
     "@semantic-release/release-notes-generator": "~12.1.0",
     "microbundle": "^0.15.0",
-    "semantic-release": "~22.0.0",
+    "semantic-release": "~24.1.0",
     "serve": "^14.0.0"
   },
   "renovate": {
