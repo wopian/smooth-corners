@@ -4,11 +4,10 @@ on:
   push:
     branches: [develop]
   workflow_dispatch:
-    branches: [develop]
 
 env:
   FORCE_COLOR: true
-  NODE_VERSION: 18
+  NODE_VERSION: 24
 
 jobs:
   setup:
