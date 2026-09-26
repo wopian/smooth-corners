@@ -1932,9 +1932,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/npm@npm:^13.1.1, @semantic-release/npm@npm:~13.1.0":
-  version: 13.1.5
-  resolution: "@semantic-release/npm@npm:13.1.5"
+"@semantic-release/npm@npm:^13.1.1, @semantic-release/npm@npm:~13.2.0":
+  version: 13.2.0
+  resolution: "@semantic-release/npm@npm:13.2.0"
   dependencies:
     "@actions/core": "npm:^3.0.0"
     "@semantic-release/error": "npm:^4.0.0"
@@ -1953,7 +1953,7 @@ __metadata:
     tempy: "npm:^3.0.0"
   peerDependencies:
     semantic-release: ">=20.1.0"
-  checksum: 10c0/940bfe3f7ec1189e100b81242835230ab3c14da58a5e2feaf43055fd432453ee7efbde93562daf083aedd73478b7f7b12b7dc63752af9e61b3e010043374c552
+  checksum: 10c0/c8ee083e224bab0971b7c528d929a82b1e8e37cf4ddd84daaf8b612e7a0acc936f955366a11d4670e6881db08e770a1ecdf499e849f8e5b9e8e0b7fda8fbf5c5
   languageName: node
   linkType: hard
 
@@ -7932,7 +7932,7 @@ __metadata:
     "@semantic-release/changelog": "npm:~6.0.2"
     "@semantic-release/commit-analyzer": "npm:~13.0.0"
     "@semantic-release/github": "npm:~12.0.0"
-    "@semantic-release/npm": "npm:~13.1.0"
+    "@semantic-release/npm": "npm:~13.2.0"
     "@semantic-release/release-notes-generator": "npm:~14.1.0"
     microbundle: "npm:^0.15.0"
     semantic-release: "npm:~25.0.0"
